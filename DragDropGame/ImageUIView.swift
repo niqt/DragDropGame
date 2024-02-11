@@ -11,7 +11,7 @@ struct ImageUIView: View {
     var imageItem: ImageItem
  
     var body: some View {
-        ZStack(alignment: .bottomTrailing) {
+        VStack{
             Image(imageItem.image)
                 .resizable()
                 .frame(width: 150, height: 150)

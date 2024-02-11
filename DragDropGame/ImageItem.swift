@@ -6,33 +6,24 @@
 //
 
 import Foundation
-import UniformTypeIdentifiers
 import SwiftUI
 
-struct ImageItem: Identifiable, Codable, Transferable {
+struct ImageItem: Identifiable {
     var id = UUID()
     var name: String
     var image: String
-    
-    static var transferRepresentation: some TransferRepresentation {
-        CodableRepresentation(for: ImageItem.self, contentType: .image)
-    }
-    
-    static var sampleImages: [ImageItem] {
-        [
-            ImageItem(name: "newspaper", image: "newspaper"),
-            ImageItem(name: "plastic", image: "plastic"),
-            ImageItem(name: "glass", image: "glass")
-        ]
-    }
 }
 
 @Observable
 class Images  {
-    var items = [ImageItem]()
+    var items: Array<ImageItem> = Array<ImageItem>()
  
     init() {
-        items.append(contentsOf: ImageItem.sampleImages)
+        items = [
+            ImageItem(name: "newspaper", image: "newspaper"),
+            ImageItem(name: "plastic", image: "plastic"),
+            ImageItem(name: "glass", image: "glass")
+        ]
     }
 }
 
