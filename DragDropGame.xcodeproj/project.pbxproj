@@ -11,6 +11,8 @@
 		B3D924072B7926F400B2E6F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D924062B7926F400B2E6F8 /* ContentView.swift */; };
 		B3D924092B7926F600B2E6F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D924082B7926F600B2E6F8 /* Assets.xcassets */; };
 		B3D9240C2B7926F600B2E6F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3D9240B2B7926F600B2E6F8 /* Preview Assets.xcassets */; };
+		B3D924132B79271200B2E6F8 /* ImageUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D924122B79271200B2E6F8 /* ImageUIView.swift */; };
+		B3D924152B79274800B2E6F8 /* ImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D924142B79274800B2E6F8 /* ImageItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		B3D924062B7926F400B2E6F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B3D924082B7926F600B2E6F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3D9240B2B7926F600B2E6F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B3D924122B79271200B2E6F8 /* ImageUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUIView.swift; sourceTree = "<group>"; };
+		B3D924142B79274800B2E6F8 /* ImageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		B3D924032B7926F400B2E6F8 /* DragDropGame */ = {
 			isa = PBXGroup;
 			children = (
+				B3D924142B79274800B2E6F8 /* ImageItem.swift */,
+				B3D924122B79271200B2E6F8 /* ImageUIView.swift */,
 				B3D924042B7926F400B2E6F8 /* DragDropGameApp.swift */,
 				B3D924062B7926F400B2E6F8 /* ContentView.swift */,
 				B3D924082B7926F600B2E6F8 /* Assets.xcassets */,
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3D924152B79274800B2E6F8 /* ImageItem.swift in Sources */,
 				B3D924072B7926F400B2E6F8 /* ContentView.swift in Sources */,
+				B3D924132B79271200B2E6F8 /* ImageUIView.swift in Sources */,
 				B3D924052B7926F400B2E6F8 /* DragDropGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
