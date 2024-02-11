@@ -16,7 +16,6 @@ struct ImageItem: Identifiable, Codable, Transferable {
     
     static var transferRepresentation: some TransferRepresentation {
         CodableRepresentation(for: ImageItem.self, contentType: .image)
-        //ProxyRepresentation(exporting: \.name)
     }
     
     static var sampleImages: [ImageItem] {
@@ -27,11 +26,6 @@ struct ImageItem: Identifiable, Codable, Transferable {
         ]
     }
 }
-
-
-/*extension UTType {
-    static var image = UTType(exportedAs: "niqt.drop.image")
-}*/
 
 @Observable
 class Images  {
